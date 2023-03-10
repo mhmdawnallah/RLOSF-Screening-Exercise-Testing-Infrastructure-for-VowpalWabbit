@@ -1,0 +1,1 @@
+{"uuid": "d6a3fbb9-34de-48a5-886d-7486472f5914", "children": ["03e5bf3a-5d78-4320-8179-208495aa4f42"], "befores": [{"name": "linear_regression_model", "status": "passed", "start": 1678474104715, "stop": 1678474104716}], "start": 1678474104715, "stop": 1678474104717}
