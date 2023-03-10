@@ -1,6 +1,6 @@
 from typing import List
 import numpy as np
-from newtrainer import NewTrainer
+from new_trainer import NewTrainer
 
 class LinearRegression(NewTrainer):
     def __init__(self):
