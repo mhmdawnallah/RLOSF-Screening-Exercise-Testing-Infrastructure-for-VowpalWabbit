@@ -40,6 +40,7 @@ pytest -v
 ```
 
 ## Project Hierachy
+```
 project/
 │
 ├── github/workflows/
@@ -54,3 +55,4 @@ project/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
