@@ -7,8 +7,8 @@ This is one of the projects of RLOSF to which I am interested in contributing.
 
 Submitted by: Mohamed Awnallah<br>
 OS used: Mac M1 ARM 2020 <br>
-Python version: <br>
-Pytest version: <br>
+Python version: 3.10.9 <br>
+Pytest version: 7.2.2 <br>
 
 # Description of the Screening exercise
 Let’s say we have just implemented a new training algorithm for regression with the following interface:
