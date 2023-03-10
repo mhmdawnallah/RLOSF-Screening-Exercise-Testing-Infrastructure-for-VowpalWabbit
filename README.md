@@ -5,9 +5,6 @@
 This repository contains pytests for a new training algorithm for regression with the `NewTrainer` abstract interface and Its implementation `LinearRegression` class on completing the screening exercise of "Testing infrastructure for VowpalWabbit" RLOSF 2023 Project.
 
 Submitted by: Mohamed Awnallah<br>
-OS used: Mac M1 ARM 2020 <br>
-Python version: 3.10.9 <br>
-Pytest version: 7.2.2 <br>
 
 # Description of the Screening exercise
 Let’s say we have just implemented a new training algorithm for regression with the following interface:
