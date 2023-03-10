@@ -12,7 +12,7 @@ This module contains an implementation of linear regression, a popular machine l
 
 
 ### Example Problem
-As an example, suppose we want to predict the price of a house based on its size (in square feet) and the number of bedrooms it has. We have a dataset of houses with known sizes and numbers of bedrooms, along with their corresponding prices. Our goal is to train a linear regression model on this dataset so that we can predict the price of a new house given its size and number of bedrooms.
+As an example, suppose we want to predict the price of a house based on its size (in square feet) and the number of bedrooms it has. We have a dataset of houses with known sizes and numbers of bedrooms, along with their corresponding prices. Our goal is to train a linear regression model on this dataset so that we can predict the price of a new house given its `size` and `number of bedrooms`.
 
 To solve this problem, we can use the LinearRegression class provided in `linear_regression.py`. We will pass in a list of houses, where each house is represented as a list of its size and number of bedrooms. We will also pass in a list of prices corresponding to each house. Here is an example of how we might use this class:
 ```python
