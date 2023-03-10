@@ -37,7 +37,7 @@ jobs:
     - name: Push alure testing reports to the github repo
       run: |
         cp -R ./allure_testing_reports ./RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/
-	cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
+        cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
         git add ./allure_testing_reports
         git commit -m "Update allure testing reports on $(date)"
         git push
