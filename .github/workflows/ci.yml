@@ -10,6 +10,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Setup git global configurations
+      run: |
+        git config --global user.name "Mohamed Awnallah"
+        git config --global user.email "mohamedmohey2352@gmail.com"
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -27,8 +32,8 @@ jobs:
         export PYTHONPATH="$PWD/src"
         pytest --alluredir=./allure_testing_reports
     
-    - name: Upload allure testing reports
-      uses: actions/upload-artifact@v3
-      with:
-        name: allure_reports
-        path: ./allure_testing_reports
+    - name: Push alure testing reports to the github repo
+      run: |
+        git add ./allure_testing_reports
+        git commit -m "Update allure testing reports"
+        git push
