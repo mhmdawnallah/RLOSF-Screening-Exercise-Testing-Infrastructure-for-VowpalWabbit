@@ -27,6 +27,10 @@ jobs:
         export PYTHONPATH="$PWD/src"
         pytest --alluredir=./allure_testing_reports
 
+    - name: List contents of current working directory
+      run: |
+        ls -la
+
     - name: Upload allure testing reports
       uses: actions/upload-artifact@v2
       with:
