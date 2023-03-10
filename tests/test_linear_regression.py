@@ -8,6 +8,11 @@ def linear_regression_model():
     model = LinearRegression()
     return model
 
+def test_predict_before_train(linear_regression_model):
+    x = [[1], [2], [3], [4], [5]]
+    with pytest.raises(ValueError):
+        linear_regression_model.predict(x)
+        
 def test_train(linear_regression_model):
     x = [[1], [2], [3], [4], [5]]
     y = [2, 4, 6, 8, 10]
