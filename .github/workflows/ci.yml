@@ -17,28 +17,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install allure
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: Run tests
       run: |
         export PYTHONPATH="$PWD/src"
-        pytest --alluredir=./allure_testing_reports
+        pytest -v
     
-    - name: Setup git configurations
-      run: |
-        git config --global user.name "Mohamed Awnallah"
-        git config --global user.email "mohamedmohey2352@gmail.com"
-        git config --global credential.helper cache
-        git clone https://${{ secrets.ROLSF_TESTING_ACCESS_TOKEN }}@github.com/mhmdawnallah/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/
-    
-    - name: Push alure testing reports to the github repo
-      run: |
-        cp -R ./allure_testing_reports ./RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/
-        cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
-        git add ./allure_testing_reports
-        git commit -m "Update allure testing reports on $(date)"
-        git push
-
