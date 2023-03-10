@@ -17,6 +17,8 @@ jobs:
 
     - name: Install dependencies
       run: |
+        sudo apt-get update
+        sudo apt-get install allure
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
@@ -24,10 +26,14 @@ jobs:
       run: |
         export PYTHONPATH="$PWD/src"
         pytest --alluredir=./allure_raw_testing_reports
-    
+        
+    - name: Generate Allure testing report static files
+      run: |
+        allure generate ./allure_raw_testing_reports -o ./allure_testing_report --clean
+
     - name: Archive Allure raw testing reports
       uses: actions/upload-artifact@v3
       with:
-        name: allure_raw_testing_reports
-        path: ./allure_raw_testing_reports
+        name: allure_testing_report
+        path: ./allure_testing_report
 
