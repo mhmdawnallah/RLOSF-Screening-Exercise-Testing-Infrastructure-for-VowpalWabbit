@@ -37,7 +37,7 @@ pytest -v
 ```
 
 ## CI/CD Workflow
-Although CI/CD (Continous Integration/Continous Deployment) workflow is not required in the screening exercise in `Testing Infrastructure for VowalWabbit`, I'd like to take it a step further and integrate the testing of the linear regression machine learning with GitHub actions. Additionally, GitHub pages will be used to display [Allure](https://github.com/allure-framework/allure-python) testing report and README documentation.
+Although CI/CD (Continous Integration/Continous Deployment) workflow is not required in the screening exercise in `Testing Infrastructure for VowalWabbit`, I'd like to take it a step further and integrate the testing of the linear regression machine learning with GitHub actions. Additionally, GitHub pages will be used to display [Allure](https://github.com/allure-framework) testing report and README documentation.
 
 The latest updated testing report could be found [here](https://mhmdawnallah.github.io/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/allure_testing_report/#)
 
