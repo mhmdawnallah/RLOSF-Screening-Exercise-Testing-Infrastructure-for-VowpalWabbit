@@ -70,7 +70,7 @@ jobs:
         cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
         git fetch origin gh-pages:gh-pages
         git checkout gh-pages
-        cp -R ../ ./RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/
+        cp -R ../ .
         git add .
         git commit -m "Update on $(date)"
         git push origin gh-pages
