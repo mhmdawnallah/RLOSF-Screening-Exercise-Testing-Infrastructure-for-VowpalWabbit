@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main
-  pull_request:  
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test:
@@ -59,6 +61,7 @@ jobs:
     - name: Build and deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         branch: gh-pages
         folder: ./allure_testing_report
 
