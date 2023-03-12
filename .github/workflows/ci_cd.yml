@@ -67,7 +67,7 @@ jobs:
     - name: Build and deploy to GitHub pages
       run: |
         git clone https://${{ secrets.ACCESS_TOKEN }}@github.com/mhmdawnallah/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/
-        cp -u . ./RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/
+        cp -urR . ./RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/
         cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
         git fetch origin gh-pages:gh-pages
         git checkout -b gh-pages
