@@ -43,6 +43,7 @@ jobs:
         path: ./allure_testing_report
 
   build-and-deploy:
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
