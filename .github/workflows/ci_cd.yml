@@ -1,0 +1,63 @@
+name: Run tests and Deploy to github pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:  
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10.9
+
+    - name: Install dependencies
+      run: |
+        curl -o allure-2.21.0.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.21.0/allure-commandline-2.21.0.tgz
+        sudo tar -zxvf allure-2.21.0.tgz -C /opt/
+        sudo ln -s /opt/allure-2.21.0/bin/allure /usr/bin/allure
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run tests
+      run: |
+        export PYTHONPATH="$PWD/src"
+        pytest --alluredir=./allure_raw_testing_reports
+        
+    - name: Generate Allure testing report static files
+      run: |
+        allure generate ./allure_raw_testing_reports -o ./allure_testing_report --clean
+
+    - name: Archive Allure raw testing reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: allure_testing_report
+        path: ./allure_testing_report
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Download Allure raw testing reports
+      uses: actions/download-artifact@v3
+      with:
+        name: allure_testing_report
+        path: ./allure_testing_report
+    
+    - name: Build and deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages
+        folder: ./allure_testing_report
+
