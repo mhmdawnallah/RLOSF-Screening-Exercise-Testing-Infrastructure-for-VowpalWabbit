@@ -49,7 +49,7 @@ Here is the CI/CD Workflow diagram:
 project/
 │
 ├── github/workflows/
-│   └── ci.yml # Continous Integration Workflow to run tests using GitHub Actions
+│   └── ci_cd.yml # Continous Integration and Deployment Workflow using GitHub Actions
 │
 ├── src/
 │   ├── linear_regression.py # Linear Regression Class which is the implementation of NewTrainer Abstract Interface
