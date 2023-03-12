@@ -70,7 +70,7 @@ jobs:
         cp -R allure_testing_report ./RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/
         cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
         git fetch origin gh-pages:gh-pages
-        git checkout -b gh-pages
+        git checkout gh-pages
         git add .
         git commit -m "Update on $(date)"
         git push origin gh-pages
