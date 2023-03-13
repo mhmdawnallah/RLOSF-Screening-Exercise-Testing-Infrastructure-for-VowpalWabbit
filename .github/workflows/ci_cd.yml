@@ -67,11 +67,10 @@ jobs:
     - name: Build and deploy to GitHub pages
       run: |
         git clone https://${{ secrets.ACCESS_TOKEN }}@github.com/mhmdawnallah/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/
-        ls -ltr
         cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
         git fetch origin gh-pages:gh-pages
         git checkout gh-pages
-        cp -Ru ../allure_testing_report ../README.md ../src/README.md .
+        cp -R ../allure_testing_report ../README.md ../src/README.md .
         git add .
         git commit -m "Update on $(date)"
         git push origin gh-pages
