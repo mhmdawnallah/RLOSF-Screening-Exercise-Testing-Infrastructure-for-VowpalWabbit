@@ -25,8 +25,8 @@ Design and write test suite for it in Python using unittest or pytest frameworks
 ## Requirements
 First clone the project using this command:
 ```bash
-git clone https://github.com/mhmdawnallah/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.git
-cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
+git clone https://github.com/mhmdawnallah/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowpalWabbit.git
+cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowpalWabbit
 ```
 Then install the following the following dependencies using this command:
 ```bash
@@ -41,7 +41,7 @@ pytest -v
 ```
 
 ## Tests result
-The latest testing report could be found [here](https://mhmdawnallah.github.io/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit/allure_testing_report/#).
+The latest testing report could be found [here](https://mhmdawnallah.github.io/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowpalWabbit/allure_testing_report/#).
 ![tests-output](assets/tests-output.png)
 
 ## CI/CD Workflow
