@@ -23,7 +23,12 @@ class NewTrainer:
 Design and write test suite for it in Python using unittest or pytest frameworks.
 ```
 ## Requirements
-The project requires the following dependencies:
+First clone the project using this command:
+```bash
+git clone https://github.com/mhmdawnallah/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.git
+cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
+```
+Then install the following the following dependencies:
 - numpy
 To install the dependencies, run the following command:
 ```bash
@@ -33,6 +38,7 @@ pip install -r requirements.txt
 ## Running Tests
 To run the tests, use the following command from the root directory:
 ```bash
+export PYTHONPATH=$PYTHONPATH:$PWD/src
 pytest -v
 ```
 
