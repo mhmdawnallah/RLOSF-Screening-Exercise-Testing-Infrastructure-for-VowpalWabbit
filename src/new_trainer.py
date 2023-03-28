@@ -7,4 +7,3 @@ class NewTrainer(ABC):
 	
 	def predict(self, x: List[float]) -> float:
 		pass
-

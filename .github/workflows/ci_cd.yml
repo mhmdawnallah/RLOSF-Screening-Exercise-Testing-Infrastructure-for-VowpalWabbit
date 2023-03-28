@@ -28,7 +28,6 @@ jobs:
         sudo ln -s /opt/allure-2.21.0/bin/allure /usr/bin/allure
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-
     - name: Run tests
       run: |
         export PYTHONPATH="$PWD/src"
@@ -37,7 +36,6 @@ jobs:
     - name: Generate Allure testing report static files
       run: |
         allure generate ./allure_raw_testing_reports -o ./allure_testing_report --clean
-
     - name: Archive Allure raw testing reports
       uses: actions/upload-artifact@v3
       with:
@@ -74,4 +72,3 @@ jobs:
         git add .
         git commit -m "Update on $(date)"
         git push origin gh-pages
-

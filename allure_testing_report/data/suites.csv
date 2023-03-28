@@ -1,8 +1,25 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Mar 12 13:08:08 UTC 2023","Sun Mar 12 13:08:08 UTC 2023","1","tests","test_linear_regression","","","","test_train",""
-"passed","Sun Mar 12 13:08:08 UTC 2023","Sun Mar 12 13:08:08 UTC 2023","0","tests","test_linear_regression","","","","test_predict_input_length_mismatch",""
-"passed","Sun Mar 12 13:08:08 UTC 2023","Sun Mar 12 13:08:08 UTC 2023","0","tests","test_linear_regression","","","","test_predict",""
-"passed","Sun Mar 12 13:08:08 UTC 2023","Sun Mar 12 13:08:08 UTC 2023","0","tests","test_linear_regression","","","","test_predict_empty_input",""
-"passed","Sun Mar 12 13:08:08 UTC 2023","Sun Mar 12 13:08:08 UTC 2023","1","tests","test_linear_regression","","","","test_train_empty_input",""
-"passed","Sun Mar 12 13:08:08 UTC 2023","Sun Mar 12 13:08:08 UTC 2023","1","tests","test_linear_regression","","","","test_train_input_length_mismatch",""
-"passed","Sun Mar 12 13:08:08 UTC 2023","Sun Mar 12 13:08:08 UTC 2023","0","tests","test_linear_regression","","","","test_predict_before_train",""
+"passed","Tue Mar 28 05:20:22 EET 2023","Tue Mar 28 05:20:22 EET 2023","0","Open-Source-Contributions.Microsoft_Research.MRLOSF.RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.tests","test_linear_regression","","","","test_train_input_length_mismatch","
+    checks that attempting to train the model with input arrays of different lengths raises a ValueError.
+    "
+"passed","Tue Mar 28 05:20:22 EET 2023","Tue Mar 28 05:20:22 EET 2023","0","Open-Source-Contributions.Microsoft_Research.MRLOSF.RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.tests","test_linear_regression","","","","test_predict_empty_input","
+    checks that attempting to predict with an empty input array raises a ValueError.
+    "
+"passed","Tue Mar 28 05:20:22 EET 2023","Tue Mar 28 05:20:22 EET 2023","0","Open-Source-Contributions.Microsoft_Research.MRLOSF.RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.tests","test_linear_regression","","","","test_predict_input_length_mismatch","
+    checks that attempting to predict with an input array of a different length than the trained model's coefficients raises a ValueError.
+    "
+"passed","Tue Mar 28 05:20:22 EET 2023","Tue Mar 28 05:20:22 EET 2023","1","Open-Source-Contributions.Microsoft_Research.MRLOSF.RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.tests","test_linear_regression","","","","test_train_empty_input","
+    checks that attempting to train the model with empty input arrays raises a ValueError.
+    "
+"passed","Tue Mar 28 05:20:22 EET 2023","Tue Mar 28 05:20:22 EET 2023","6","Open-Source-Contributions.Microsoft_Research.MRLOSF.RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.tests","test_linear_regression","","","","test_predict","
+    checks that the model can predict the output for a given input with a certain level of accuracy.
+    "
+"passed","Tue Mar 28 05:20:22 EET 2023","Tue Mar 28 05:20:22 EET 2023","0","Open-Source-Contributions.Microsoft_Research.MRLOSF.RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.tests","test_linear_regression","","","","test_predict_before_train","
+    checks that attempting to predict before training the model raises a ValueError.
+    "
+"passed","Tue Mar 28 05:20:22 EET 2023","Tue Mar 28 05:20:22 EET 2023","0","Open-Source-Contributions.Microsoft_Research.MRLOSF.RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.tests","test_linear_regression","","","","test_train","
+    checks that the model is trained correctly on a given input dataset.
+    "
+"passed","Tue Mar 28 05:20:22 EET 2023","Tue Mar 28 05:20:22 EET 2023","1","Open-Source-Contributions.Microsoft_Research.MRLOSF.RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.tests","test_linear_regression","","","","test_train_convergence","
+    checks that the model's coefficients converge to the expected values with a given tolerance.
+    "
