@@ -28,9 +28,7 @@ First clone the project using this command:
 git clone https://github.com/mhmdawnallah/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit.git
 cd RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowalWabbit
 ```
-Then install the following the following dependencies:
-- numpy
-To install the dependencies, run the following command:
+Then install the following the following dependencies using this command:
 ```bash
 pip install -r requirements.txt
 ```
