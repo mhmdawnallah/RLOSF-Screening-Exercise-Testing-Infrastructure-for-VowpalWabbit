@@ -71,7 +71,7 @@ jobs:
         git fetch origin gh-pages:gh-pages
         git checkout gh-pages
         sleep 2
-	cp -Rf ../allure_testing_report ../README.md ../src/README.md .
+        cp -Rf ../allure_testing_report ../README.md ../src/README.md .
         git add .
         git commit -m "Update on $(date)"
         git push origin gh-pages
