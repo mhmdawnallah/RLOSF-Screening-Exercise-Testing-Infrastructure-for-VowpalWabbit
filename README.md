@@ -41,7 +41,8 @@ pytest -v
 ```
 
 ## Tests result
-The latest testing report could be found [here](https://mhmdawnallah.github.io/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowpalWabbit/allure_testing_report/#).
+**The latest testing report could be found [here](https://mhmdawnallah.github.io/RLOSF-Screening-Exercise-Testing-Infrastructure-for-VowpalWabbit/allure_testing_report/#)**:<br>
+
 ![tests-output](assets/tests-output.png)
 
 ## CI/CD Workflow
